@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Content</title>
+</head>
+<body>
+    <div>
+        <p>Delivered-To: <a href="mailto:dror@fine.dev">dror@fine.dev</a></p>
+        <p>Received: by 2002:a05:6022:7394:b0:66:cdbf:aaf4 with SMTP id bl20csp1868593lab; Tue, 14 Jan 2025 05:07:36 -0800 (PST)</p>
+        <p>X-Google-Smtp-Source: AGHT+IGEWtwtX37mWjUyybnSW8N8PeGr7hfr3R5XG/WUZtaBOopWqkOfcxAMGabZ4rxz7lef/Hjj</p>
+        <p>X-Received: by 2002:a05:6102:578e:b0:4af:eccf:e3ca with SMTP id ada2fe7eead31-4b3d0da8a8cmr21341619137.10.1736860055901; Tue, 14 Jan 2025 05:07:35 -0800 (PST)</p>
+        <p>ARC-Seal: i=1; a=rsa-sha256; t=1736860055; cv=none; d=<a href="http://google.com">google.com</a>; s=arc-20240605; b=l1htR6zVP+bQPISu05gUHunRMMvmCCME7+58yNvFU8uRyHlGI4MF5/YFVoRe1PLJa2 XNIDjZjUk4QDmcHVtIjt8RYJhhnC70CuhJnWrJnpklx0u/f8P9xwmQ4OS+Ke9ArPMMTq v9JgFksVbk8YO1Ys3jwf8PUaJh+vfFMfSWDwCFDsK1fc0WjzxqJbCB/AkMbYJUYVcIYr LtK7ZLsMc1LwvRKYAY3JvxvXL1TYxjeMLiC6vKnY6sC7teZrHuuZl4bp202ltiBqmJ0/ 2esovzt0lD9TG7Wxmm3Y/Jgq3EDNEttgl2btPiZFro8fERmx3Wm3lt30cr1cm0urF0vV mZzw==</p>
+        <p>ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=<a href="http://google.com">google.com</a>; s=arc-20240605; h=list-post:list-id:list-archive:list-url:list-owner:sender :feedback-id:date:message-id:to:from:subject:mime-version :dkim-signature; bh=IU7xVO0YhuxhxVP4mV97m9L7LuX2IdV6o1zU0uDyx/E=; fh=UHyaqpRr0WB1DDjGsqua9gN8F0H69OT4UjMkfyXM2H8=; b=h30M8wDgUPTuggd5rnBZhAfTzYJQMWn1pI083FC2MGHGQHhjZkApmA2JPLkctNNTuc 7RtPpxmCbJGvsdaS+F6CDjCh1nV9TyuckkaOFF4p0ODfA6W/JyhNIKv9Xnb7L118V8xG 6dOYa0Qt6zTkHT9Qufu7vIWQKLCcCIbhQ4thL+iicmP+PZ75x+mmJPWpyoLL/yp9ov9P qcTk1NFwtWtlAfjlkUrujVloMBGN6nXQG+KywBf9g1wDwWl5KKahBkAAzsxCGFSjc44w 1KeAf4CBGbmTxi8fGvKi0mYeP02PwaE/Re9hIx5ruJLcMYugHizE7ntXLvTSi4vqvrhw Vksw==; dara=<a href="http://google.com">google.com</a></p>
+        <p>ARC-Authentication-Results: i=1; <a href="http://mx.google.com">mx.google.com</a>; dkim=pass <a href="mailto:header.i=@mg-d1.substack.com">header.i=@mg-d1.substack.com</a> header.s=k1 header.b=XIIBOqJo; spf=pass (<a href="http://google.com">google.com</a>: domain of <a href="mailto:bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com">bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com</a> designates 159.112.244.5 as permitted sender) smtp.mailfrom="<a href="mailto:bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com">bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com</a>"; dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=<a href="http://substack.com">substack.com</a></p>
+        <p>Return-Path: &lt;<a href="mailto:bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com">bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com</a>&gt;</p>
+        <p>Received: from <a href="http://m244-5.mailgun.net">m244-5.mailgun.net</a> (<a href="http://m244-5.mailgun.net">m244-5.mailgun.net</a>. [159.112.244.5]) by <a href="http://mx.google.com">mx.google.com</a> with UTF8SMTPS id ada2fe7eead31-4b608ff760csi3160984137.186.2025.01.14.05.07.35 for &lt;<a href="mailto:dror@fine.dev">dror@fine.dev</a>&gt; (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128); Tue, 14 Jan 2025 05:07:35 -0800 (PST)</p>
+        <p>Received-SPF: pass (<a href="http://google.com">google.com</a>: domain of <a href="mailto:bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com">bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com</a> designates 159.112.244.5 as permitted sender) client-ip=159.112.244.5;</p>
+        <p>Authentication-Results: <a href="http://mx.google.com">mx.google.com</a>; dkim=pass <a href="mailto:header.i=@mg-d1.substack.com">header.i=@mg-d1.substack.com</a> header.s=k1 header.b=XIIBOqJo; spf=pass (<a href="http://google.com">google.com</a>: domain of <a href="mailto:bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com">bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com</a> designates 159.112.244.5 as permitted sender) smtp.mailfrom="<a href="mailto:bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com">bounce+8e72d6.39b08c6-dror=fine.dev@mg-d1.substack.com</a>"; dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=<a href="http://substack.com">substack.com</a></p>
+        <p>DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=<a href="http://mg-d1.substack.com">mg-d1.substack.com</a>; q=dns/txt; s=k1; t=1736860055; x=1736867255; h=List-Post: List-Id: List-Archive: List-Owner: sender: sender: Date: Message-Id: To: To: From: From: Subject: Subject: Content-Type: Mime-Version; bh=IU7xVO0YhuxhxVP4mV97m9L7LuX2IdV6o1zU0uDyx/E=; b=XIIBOqJofgo1fRP+L3dtBkAiclNQD60e/gB0l34biNbH4SJNbKBTq/bPSINjXz7bzDwHW2Mb1UwJ5N6pHTluQGyLDCJ1n2qeBbn1deDAyCAyRRKboBz+26jVXP5kHEoHXE8T7+O2R35DFFKDpZ0/0lPGW6ptwrLlZbqlkFsRdJA=</p>
+        <p>X-Mailgun-Sending-Ip: 159.112.244.5</p>
+        <p>X-Mailgun-Sending-Ip-Pool-Name:</p>
+        <p>X-Mailgun-Sending-Ip-Pool:</p>
+        <p>X-Mailgun-Sid: WyI3ZGI0YSIsImRyb3JAZmluZS5kZXYiLCIzOWIwOGM2Il0=</p>
+        <p>Received: by 92dfc1c8059e with HTTP id 6786619727609e8bf18ec34c; Tue, 14 Jan 2025 13:07:35 GMT</p>
+        <p>Mime-Version: 1.0</p>
+        <p>Content-Type: multipart/alternative; boundary="9e6c4e893209108f563cc43e83bc0542c371b6a36fde4121575bf94be46d"</p>
+        <p>Subject: [TEST 3t7 - Free] AI Coding Notes #1: AI-Ready Tasks</p>
+        <p>From: Dan Leshem from AI Coding Notes &lt;<a href="mailto:aicoding@substack.com">aicoding@substack.com</a>&gt;</p>
+        <p>To: <a href="mailto:dror@fine.dev">dror@fine.dev</a></p>
+        <p>X-Mailgun-Tag: test</p>
+        <p>X-Mailgun-Track-Clicks: false</p>
+        <p>Message-Id: &lt;<a href="mailto:20250114130734.3.95946f72ca09a823.mayvdnvo@mg-d1.substack.com">20250114130734.3.95946f72ca09a823.mayvdnvo@mg-d1.substack.com</a>&gt;</p>
+        <p>Date: Tue, 14 Jan 2025 13:07:35 +0000</p>
+        <p>Feedback-ID: post-154817601:cat-test:pub-465573:substack</p>
+        <p>sender: Dan Leshem from AI Coding Notes &lt;<a href="mailto:aicoding@substack.com">aicoding@substack.com</a>&gt;</p>
+        <p>List-Owner: &lt;<a href="mailto:aicoding@substack.com">aicoding@substack.com</a>&gt;</p>
+        <p>List-URL: &lt;<a href="https://aicoding.substack.com/">https://aicoding.substack.com/</a>&gt;</p>
+        <p>List-Archive: &lt;<a href="https://aicoding.substack.com/archive">https://aicoding.substack.com/archive</a>&gt;</p>
+        <p>List-Id: &lt;<a href="http://aicoding.substack.com">aicoding.substack.com</a>&gt;</p>
+        <p>List-Post: &lt;<a href="https://aicoding.substack.com/publish/post/154817601">https://aicoding.substack.com/publish/post/154817601</a>&gt;</p>
+        <p>X-Mailgun-Variables: {"category": "test", "email_generated_at": "1736860055394", "is_freemail": "true", "post_audience": "everyone", "post_id": "154817601", "post_type": "newsletter", "pub_community_enabled": "true", "publication_id": "465573", "subdomain": "aicoding", "user_id": ""}</p>
+        <p>--9e6c4e893209108f563cc43e83bc0542c371b6a36fde4121575bf94be46d</p>
+        <p>Content-Type: text/plain; charset="utf-8"</p>
+        <p>Content-Transfer-Encoding: quoted-printable</p>
+        <p>View this post on the web at <a href="https://aicoding.substack.com/publish/post/154=>">https://aicoding.substack.com/publish/post/154=></a></p>
+        <p>🔍 This Week's Key Learning</p>
+        <p>As a startup CTO working with a small team, I've learned that the secret to effective AI usage isn't to give it our hardest problems, but rather strategically offloading the right tasks. Using AI for most complex problems is a mistake.</p>
+        <p>Our success rate with AI agents jumped by 300% when we started assigning them what we call "low-surface context tasks" – issues that touch 3 or fewer files and have clear success criteria.</p>
+        <p>We’ve started managing a dedicated backlog for AI. Issues with limited scope, low-surface context and bounded system knowledge are added to the AI backlog.</p>
+        <p>This includes:</p>
+        <ul>
+            <li>All minor bugs</li>
+            <li>UI tweaks</li>
+            <li>Chore tasks (e.g. adding a proper error handling)</li>
+            <li>Other issues where the path to resolution is clear and straightforward.</li>
+        </ul>
+        <p>Rather than:</p>
+        <ul>
+            <li>Replacing the auth provider</li>
+            <li>Working on huge refactors</li>
+            <li>Making significant changes to core features</li>
+            <li>Debugging a memory leak</li>
+        </ul>
+        <p>This way, all “ai-ready” tasks are grouped together. When we have the time, we can offload a bunch of them to our AI agent to execute in parallel.</p>
+        <p>💡 AI Coding Tip of the Week</p>
+        <p>If you're using Linear (like most startups I know), add an "ai-ready" label with these criteria:</p>
+        <ul>
+            <li>Touches ≤ 3 files</li>
+            <li>Clear acceptance criteria</li>
+            <li>Estimated at &lt; 3 hours</li>
+            <li>Single repository</li>
+            <li>No Gotchas</li>
+        </ul>
+        <p>🎁 This Week's AI Coding Goodie</p>
+        <p>If you use Linear, I’ve created a simple Linear AI Triage tool script for you! It automatically scores your Linear issues for AI suitability and helps you identify the perfect tasks to delegate.</p>
+        <p>Check it out on GitHub: LinearAI Triage Tool [ <a href="https://github.com/finehq/ai-coding-guide/tree/main/01-ai-ready-tasks">https://github.com/finehq/ai-coding-guide/tree/main/01-ai-ready-tasks</a> ]</p>
+        <p>This is the prompt I built it with:</p>
+        <p>Create a script in Python that triage issues in Linear that are ready for AI using OpenAI LLM.</p>
+        <ul>
+            <li>The script pulls issues in status “Backlog / Todo”</li>
+            <li>For every issue:</li>
+            <ul>
+                <li>Create a formatted issue that includes the issue title, description and comments</li>
+                <li>Make an API request to OpenAI / GPT4o model, prompting the AI to analyze the issue and advice if the issue can be delegated to AI, by the following criteria:</li>
+                <ul>
+                    <li>The issue is minor and well defined</li>
+                    <li>The issue is likely to involve no more than 3 files in the repository</li>
+                    <li>The issue seems to be limited in scope, with limited system knowledge</li>
+                    <li>The issue is estimated to be &lt; 3 hours</li>
+                </ul>
+            </ul>
+            <li>The OpenAI API should respond with a JSON response {“ai_ready”: “true/false”}</li>
+            <li>Parse the Open AI API response, and if the “ai_ready” is true, add a label “ai-ready” to the issue on Linear.</li>
+            <li>Make sure all relevant API keys are taken from environment variables</li>
+        </ul>
+        <p>🔮 What's Next</p>
+        <p>Next week I’m going to focus on “How to review your AI’s work”, which I think it’s a critical skill for AI developers. If you have any tips or examples you’d like to share, please send me a DM.</p>
+        <p>---</p>
+        <p>*Found this useful? Share it with your team and subscribe for weekly insights on practical AI coding tips.*</p>
+        <p>Unsubscribe <a href="https://aicoding.substack.com/account">https://aicoding.substack.com/account</a></p>
+    </div>
+</body>
+</html>
